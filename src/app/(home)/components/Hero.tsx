@@ -1,29 +1,28 @@
 import React from 'react'
-import TechIcons from './TechIcons'
-import Image from 'next/image'
-import Link from 'next/link'
+import LinkActions from './LinkActions'
+import SkillIcons from './SkillIcons'
+import Stripe from './Stripe'
 
 const Hero = () => {
     return (
-        <div className="h-screen" style={{ userSelect: 'none' }}>
-            <div className="flex items-center justify-center flex-col h-full w-full relative">
-                <div className="text-center animate-once animate-fade-down">
-                    <h1 className="text-xl font-semibold">
-                        <code>{`<Hi there! I'm`} <span className="text-primary">Sajed</span>.
-                            {` A`} <span className="text-primary">Full-stack Web Developer</span> {`where I/>`}
-                        </code>
-                    </h1>
-                    <p className="text-[6rem] font-extrabold text-primary">Think. Build. Solve.</p>
+        <div className="h-screen w-full relative" style={{ userSelect: 'none' }}>
+            <Stripe />
 
-                    <div className='flex items-center justify-center gap-5 mt-3'>
-                        <Link href="https://github.com/myself-sajed">
-                            <Image draggable={false} src="/assets/github.svg" alt="github" width={54} height={54} /></Link>
-                        <Link href="https://www.linkedin.com/in/shaikhsajed">
-                            <Image draggable={false} src="/assets/linkedin.svg" alt="linkedin" width={54} height={54} />
-                        </Link>
-                    </div>
+            <div className="flex items-center justify-center flex-col h-full w-full relative animate-once animate-fade-up ">
+                <div className='absolute top-[23%] w-[80%]'>
+                    <SkillIcons />
                 </div>
-                <TechIcons />
+
+                <div className="text-center mt-[8rem]">
+                    <h1 className="text-xl font-semibold">
+                        <code>{`<Hi there! I'm`} <span className="text-primary">Sajed</span> {`/>`}</code>
+                    </h1>
+                    <p className="text-[5.5rem] font-extrabold text-slate-800">A Fullstack Web Developer</p>
+                    <p className="text-[2rem] font-extrabold" style={{ lineHeight: '30px' }}> where,
+                        <span className='text-primary'>&nbsp; &nbsp; I Think.  &nbsp; I Build.  &nbsp; I Solve.</span>
+                    </p>
+                    <LinkActions />
+                </div>
             </div>
         </div>
     )
