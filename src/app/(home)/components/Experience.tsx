@@ -1,18 +1,17 @@
-import Image from "next/image"
-import SkillIcons from "./SkillIcons"
-import ScrollingIcons from "./ScrollingIcons"
+import ScrollingIcons from "../design/ScrollingIcons"
+import Timeline from "../design/Timeline"
 
 const Experience = () => {
     return (
-        <div id="skills" className="w-full h-screen relative overflow-hidden">
-            <div className="absolute left-[10%] top-[10%] w-full">
-                <p className="inline text-[19.5rem] font-extrabold text-gray-100">M  E  R  N</p>
-            </div>
+        <div id="skills" className="w-full relative overflow-hidden">
             <h1 className="text-xl font-semibold text-center">
-                <code className="text-primary">{`<Skills />`}</code>
+                <code className="text-primary">{`<Experience & Skill Set />`}</code>
             </h1>
-            <div className="w-[90%]">
-                <ScrollingIcons />
+            <Timeline />
+            <div className="h-screen">
+                <div className="fixed left-[10%] bottom-[10%] w-full">
+                    <p className="inline text-[19.5rem] font-extrabold  text-[#ededed50]">M  E  R  N</p>
+                </div>
             </div>
         </div>
     )

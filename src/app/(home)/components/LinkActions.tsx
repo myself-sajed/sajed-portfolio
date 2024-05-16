@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
+import { ArrowRight, FileText } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const LinkActions = () => {
     return (
@@ -12,7 +12,14 @@ const LinkActions = () => {
                 <Image draggable={false} src="/assets/linkedin.svg" alt="linkedin" width={52} height={52} />
             </Link>
             <Link href="#skills">
-                <Button>Get to Know Me</Button>
+                <Button type="submit" className="flex items-center gap-3">
+                    <span>Get to Know Me</span> <ArrowRight strokeWidth={3} size={16} />
+                </Button>
+            </Link>
+            <Link href="#skills">
+                <Button type="submit" className="flex items-center gap-3">
+                    <span>Download Resume</span> <FileText size={20} />
+                </Button>
             </Link>
         </div>
     )

@@ -1,16 +1,21 @@
-import Image from "next/image"
-import Link from "next/link"
+"use client"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import Stripe from "./Stripe"
+import Stripe from "../design/Stripe"
 import { ArrowRight } from "lucide-react"
 
 export function ContactForm() {
+
+    const handleContact = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        alert('Contact form clicked')
+    }
+
     return (
-        <div className="w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px] relative">
+        <form onSubmit={handleContact} className="w-full lg:grid lg:grid-cols-2 relative">
             <div>
                 <Stripe />
             </div>
@@ -55,6 +60,6 @@ export function ContactForm() {
 
                 </div>
             </div>
-        </div>
+        </form>
     )
 }
