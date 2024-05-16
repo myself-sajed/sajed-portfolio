@@ -5,7 +5,7 @@ const SkillIcons = () => {
     const icons = ["mongodb.svg", "express.svg", "node.svg", "next.svg", "react.svg", "javascript.svg", "tailwind.svg", "typescript.svg", "docker.svg", "aws.svg", "redis.svg"]
 
     return (
-        <div className="flex justify-between items-center relative w-full">
+        <div className="flex justify-between items-center relative w-full mt-[5rem]">
             {
                 icons.map((icon, index) => {
                     const middleIndex = Math.floor(icons.length / 2);
@@ -13,7 +13,7 @@ const SkillIcons = () => {
 
                     // Adjust the heightOffset calculation with a scaling factor
                     const scalingFactor = 4;
-                    const heightOffset = Math.pow(middleIndex - distanceFromMiddle, 2) * scalingFactor;
+                    const heightOffset = Math.pow(distanceFromMiddle, 2) * scalingFactor;
 
                     return (
                         <div
@@ -25,8 +25,8 @@ const SkillIcons = () => {
                                 draggable={false}
                                 src={`/assets/${icon}`}
                                 alt={icon}
-                                width={35}
-                                height={35}
+                                width={46}
+                                height={46}
                             />
                         </div>
                     )

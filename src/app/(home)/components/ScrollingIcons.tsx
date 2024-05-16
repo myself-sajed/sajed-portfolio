@@ -1,0 +1,55 @@
+import Image from 'next/image'
+import React from 'react'
+
+const ScrollingIcons = () => {
+    const icons = ["html.svg", "css.svg", "mongodb.svg", "express.svg", "node.svg", "next.svg", "react.svg", "javascript.svg", "tailwind.svg", "typescript.svg", "docker.svg", "aws.svg", "redis.svg"]
+
+    return (
+        <div className='flex items-center justify-end gap-10 '>
+            <div className="mt-[5rem] space-y-10 icons-top">
+                {
+                    [...icons, ...icons].map((icon, index) => {
+                        return (
+                            <div
+                                key={index}
+                                className='relative'
+                            >
+                                <Image
+                                    draggable={false}
+                                    className='grayscale-[50%]'
+                                    src={`/assets/${icon}`}
+                                    alt={icon}
+                                    width={46}
+                                    height={46}
+                                />
+                            </div>
+                        )
+                    })
+                }
+            </div>
+            <div className="mt-[5rem] space-y-10 icons-bottom">
+                {
+                    [...icons, ...icons].map((icon, index) => {
+                        return (
+                            <div
+                                key={index}
+                                className='relative'
+                            >
+                                <Image
+                                    draggable={false}
+                                    className='grayscale-[50%]'
+                                    src={`/assets/${icon}`}
+                                    alt={icon}
+                                    width={46}
+                                    height={46}
+                                />
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </div>
+    )
+}
+
+export default ScrollingIcons
