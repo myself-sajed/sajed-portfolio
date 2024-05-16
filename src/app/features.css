@@ -1,0 +1,150 @@
+  /* smoothely scroll icons to top */
+  
+  .icons-top{
+      animation: icons-top 20s linear infinite alternate;
+  }
+  .icons-bottom{
+      animation: icons-bottom 20s linear infinite alternate;
+  }
+  
+  @keyframes icons-top {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-100vh); }
+  }
+  @keyframes icons-bottom {
+      0% { transform: translateY(-100vh); }
+      100% { transform: translateY(0); }
+  }
+  
+
+
+
+.typewriter p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 5px solid rgb(64, 59, 212); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .8s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #3A72ED;  }
+  }
+
+
+  .hero-gradient{
+    background: rgb(76,76,201);
+    background: linear-gradient(169deg, rgba(76,76,201,1) 0%, rgba(229,229,255,0) 43%);
+  }
+
+
+  #stripes{
+    width:100%;
+    height: 25%;
+    overflow: hidden;
+    transform-origin: 0;
+    transform: skewY(-12deg);
+    background: -webkit-linear-gradient(300deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+    }
+    
+    #stripes, #stripes span{
+      position: absolute;
+    }
+    
+    #stripes span{
+      height: 40px;
+    }
+    
+    #stripes :nth-child(1){
+      width: 50%;
+      left: 50%;
+      top:40px;
+      background:#4c29ff;
+    }
+    
+    #stripes :nth-child(2){
+      width: 14%;
+      right: 0;
+      bottom:40px;
+      background: #2be7ff;
+    }
+    
+    #stripes :nth-child(3){
+      width: 25%;
+      bottom: 0;
+      right: 0;
+      background: #a1ffc8;
+    }
+    
+    @media (min-width:670px){
+      #stripes span{
+        height:150px;
+      }
+      #stripes :nth-child(1){
+        top: 0;
+      }
+      #stripes :nth-child(2){
+        width: 16.66667%;
+        top: 300px;
+        bottom: auto;
+        background: #0dcfff;
+      }
+      #stripes :nth-child(3){
+        width: 33.33333%;
+        right: auto;
+        background: #11bdff;
+      }
+    }
+    
+    @media (min-width: 880px){
+      #stripes span{
+        height: 190px;
+      }
+    
+      #stripes :nth-child(1){
+        width: 33.33333%;
+        left: -16.66666%;
+        background: #53f;
+      }
+    
+      #stripes :nth-child(2){
+        width: 33.33333%;
+        top: 0;
+        left: 16.66666%;
+        right: auto;
+        background: #4553ff;
+      }
+    
+      #stripes :nth-child(3){
+        width: 33.33333%;
+        left: 49.99999%;
+        bottom: auto;
+        background: #4f40ff;
+      }
+    
+      #stripes :nth-child(4){
+        width: 33.33333%;
+        top: 380px;
+        right: -16.66666%;
+        background: #25ddf5;
+      }
+    
+      #stripes :nth-child(5){
+        width: 33.33333%;
+        bottom: 0;
+        background: #1fa2ff;
+      }
+    }
+
+
