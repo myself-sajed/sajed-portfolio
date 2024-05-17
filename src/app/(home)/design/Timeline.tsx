@@ -45,7 +45,7 @@ const Timeline = () => {
                             <i className="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">Journey</i>
                         </div>
                         <div className="px-3 pt-3 pb-4 text-xs font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50">
-                            <p className='text-center mt-2'>Today, I am proficient in a range of technologies</p>
+                            <p className='text-center mt-2 font-semibold text-primary '>Today, I have <span className="font-bold text-sm mx-1">2+ Years</span> of experience in </p>
 
                             <div className="grid grid-cols-4 items-center gap-y-5 mt-3 mb-4 space-y-5">
                                 {

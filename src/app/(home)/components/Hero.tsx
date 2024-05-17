@@ -5,7 +5,7 @@ import { Mail, Phone } from 'lucide-react'
 
 const Hero = () => {
     return (
-        <div className="h w-full relative bg-slate-50">
+        <div className="h-screen w-full relative z-30 bg-white border-double border-b-4 border-primary">
             <section className="cd-position-relative cd-z-index-1">
 
                 <div className="cd-position-relative cd-z-index-2">
