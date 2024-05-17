@@ -16,10 +16,10 @@ export function ContactForm() {
 
     return (
         <form onSubmit={handleContact} className="w-full lg:grid lg:grid-cols-2 relative">
-            <div>
+            <div className="mt-[5rem]">
                 <Stripe />
             </div>
-            <div className="flex items-center justify-center py-12">
+            <div className="flex items-center justify-center py-12 mt-[3rem]">
                 <div className="w-[70%]">
                     <div className="grid gap-2 text-center mb-5">
                         <h1 className="text-3xl font-bold">Get in touch</h1>

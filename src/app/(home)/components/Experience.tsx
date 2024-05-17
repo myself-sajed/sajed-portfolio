@@ -1,4 +1,3 @@
-import ScrollingIcons from "../design/ScrollingIcons"
 import Timeline from "../design/Timeline"
 
 const Experience = () => {

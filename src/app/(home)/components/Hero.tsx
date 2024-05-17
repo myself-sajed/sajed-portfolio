@@ -58,38 +58,38 @@ const Hero = () => {
                         <defs>
                             <linearGradient id="bg-decoration-v1-fx-5-linear-1" x1="674.131" y1="-440" x2="674.131" y2="396.003"
                                 gradientUnits="userSpaceOnUse">
-                                <stop stop-color="var(--bg-decoration-color-2)" />
-                                <stop offset="1" stop-color="var(--bg-decoration-color-2)" stop-opacity="0" />
+                                <stop stopColor="var(--bg-decoration-color-2)" />
+                                <stop offset="1" stopColor="var(--bg-decoration-color-2)" stopOpacity="0" />
                             </linearGradient>
                             <linearGradient id="bg-decoration-v1-fx-5-linear-2" x1="1963.13" y1="-262" x2="1963.13" y2="574.003"
                                 gradientUnits="userSpaceOnUse">
-                                <stop stop-color="var(--bg-decoration-color-2)" />
-                                <stop offset="1" stop-color="var(--bg-decoration-color-2)" stop-opacity="0" />
+                                <stop stopColor="var(--bg-decoration-color-2)" />
+                                <stop offset="1" stopColor="var(--bg-decoration-color-2)" stopOpacity="0" />
                             </linearGradient>
                             <linearGradient id="bg-decoration-v1-fx-5-linear-3" x1="2140.13" y1="-321" x2="2140.13" y2="515.003"
                                 gradientUnits="userSpaceOnUse">
-                                <stop stop-color="var(--bg-decoration-color-2)" />
-                                <stop offset="1" stop-color="var(--bg-decoration-color-2)" stop-opacity="0" />
+                                <stop stopColor="var(--bg-decoration-color-2)" />
+                                <stop offset="1" stopColor="var(--bg-decoration-color-2)" stopOpacity="0" />
                             </linearGradient>
                             <linearGradient id="bg-decoration-v1-fx-5-linear-4" x1="1358.5" y1="40.3308" x2="1358.5" y2="876.334"
                                 gradientUnits="userSpaceOnUse">
-                                <stop stop-color="var(--bg-decoration-color-2)" />
-                                <stop offset="1" stop-color="var(--bg-decoration-color-2)" stop-opacity="0" />
+                                <stop stopColor="var(--bg-decoration-color-2)" />
+                                <stop offset="1" stopColor="var(--bg-decoration-color-2)" stopOpacity="0" />
                             </linearGradient>
                             <linearGradient id="bg-decoration-v1-fx-5-linear-5" x1="1930.13" y1="-453" x2="1930.13" y2="383.003"
                                 gradientUnits="userSpaceOnUse">
-                                <stop stop-color="var(--bg-decoration-color-2)" />
-                                <stop offset="1" stop-color="var(--bg-decoration-color-2)" stop-opacity="0" />
+                                <stop stopColor="var(--bg-decoration-color-2)" />
+                                <stop offset="1" stopColor="var(--bg-decoration-color-2)" stopOpacity="0" />
                             </linearGradient>
                             <linearGradient id="bg-decoration-v1-fx-5-linear-5" x1="864.131" y1="-418" x2="864.131" y2="418.003"
                                 gradientUnits="userSpaceOnUse">
-                                <stop stop-color="var(--bg-decoration-color-2)" />
-                                <stop offset="1" stop-color="var(--bg-decoration-color-2)" stop-opacity="0" />
+                                <stop stopColor="var(--bg-decoration-color-2)" />
+                                <stop offset="1" stopColor="var(--bg-decoration-color-2)" stopOpacity="0" />
                             </linearGradient>
                             <linearGradient id="bg-decoration-v1-fx-5-linear-7" x1="474.534" y1="-251" x2="474.534" y2="89.4236"
                                 gradientUnits="userSpaceOnUse">
-                                <stop stop-color="var(--bg-decoration-color-2)" stop-opacity="0" />
-                                <stop offset="1" stop-color="var(--bg-decoration-color-2)" />
+                                <stop stopColor="var(--bg-decoration-color-2)" stopOpacity="0" />
+                                <stop offset="1" stopColor="var(--bg-decoration-color-2)" />
                             </linearGradient>
                         </defs>
                     </svg>
