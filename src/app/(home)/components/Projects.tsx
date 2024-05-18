@@ -7,8 +7,9 @@ const Projects = () => {
             <h1 className="text-xl font-semibold text-center">
                 <code className="text-primary">{`<Major Projects />`}</code>
             </h1>
-            <div className="mt-10 px-10 grid grid-cols-2 gap-5">
-                <ProjectCard title="CodeShare" description="Share your code with others" imgUrl="/assets/p1.png" url="https://codeshare.netlify.app" />
+            <div className="mt-10 px-10 grid grid-cols-3 gap-10">
+                <ProjectCard title="SRTMUN-UIMS" description="University Information Management" imgUrl="/assets/p3.png" url="https://codeshare.netlify.app" />
+                <ProjectCard title="CodeShare" description="Share code in an easy way" imgUrl="/assets/p1.png" url="https://codeshare.netlify.app" />
                 <ProjectCard title="Indian Toll Calculator" description="Calculate Indian tolls with ease" imgUrl="/assets/p2.png" url="https://codeshare.netlify.app" />
             </div>
         </div>
