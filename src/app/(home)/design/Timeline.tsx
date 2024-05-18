@@ -37,7 +37,7 @@ const Timeline = () => {
                 </li>
                 <li className="mb-10 ms-6">
                     <span className="absolute border flex items-center justify-center w-6 h-6 bg-white rounded-full -start-3">
-                        <Baby size={42} />
+                        <Image height={42} width={42} className="rounded-full shadow-lg" src="/assets/dev.jpeg" alt="Shaikh Sajed" />
                     </span>
                     <div className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600">
                         <div className="items-center justify-between mb-3 sm:flex">
@@ -47,7 +47,7 @@ const Timeline = () => {
                         <div className="px-3 pt-3 pb-4 text-xs font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50">
                             <p className='text-center mt-2 font-semibold text-primary '>Today, I have <span className="font-bold text-sm mx-1">2+ Years</span> of experience in </p>
 
-                            <div className="grid grid-cols-4 items-center gap-y-5 mt-3 mb-4 space-y-5">
+                            <div className="grid grid-cols-4 items-center gap-y-10 my-8">
                                 {
                                     iconDetails.map((icon) => {
                                         return <div key={icon.name} className='flex items-center justify-center flex-col'>

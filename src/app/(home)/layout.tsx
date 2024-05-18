@@ -3,7 +3,6 @@ import "../globals.css";
 import "../features.css";
 import { Sora as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils";
-import Footer from "./components/Footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],

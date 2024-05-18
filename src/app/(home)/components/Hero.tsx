@@ -1,8 +1,6 @@
 import LinkActions from './LinkActions'
-import Stripe from '../design/Stripe'
 import Link from 'next/link'
 import { Mail, Phone } from 'lucide-react'
-
 const Hero = () => {
     return (
         <div className="h-screen w-full relative z-30 bg-white border-double border-b-4 border-primary">
@@ -27,7 +25,7 @@ const Hero = () => {
                                     <code>{`<Hi there! I'm`} <span className="text-primary">Shaikh Sajed</span> {`/>`}</code>
                                 </h1>
                                 <div className="typewriter">
-                                    <p className="text-[5.5rem] font-extrabold text-slate-800">A Fullstack Web Developer</p>
+                                    <p className="text-[4.5rem] font-extrabold text-slate-800">A Fullstack Web Developer</p>
                                 </div>
                                 <p className="text-[2rem] font-extrabold" style={{ lineHeight: '30px' }}> where,
                                     <span className='text-primary'>&nbsp; &nbsp; I Think.  &nbsp; I Build.  &nbsp; I Solve.</span>

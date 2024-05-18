@@ -14,7 +14,7 @@ const WhyMe = () => {
 
                 <div className="relative mt-[5rem]">
                     <div className="absolute top-[-15%] right-[-15%]">
-                        <Image src="/assets/icons/circle.svg" width={100} height={100} alt="Sajed Shaikh" />
+                        <Image draggable={false} src="/assets/icons/circle.svg" width={100} height={100} alt="Sajed Shaikh" />
 
                     </div>
                     <div className="absolute bottom-[-15%]">
@@ -22,7 +22,7 @@ const WhyMe = () => {
                     </div>
                     <Image draggable={false} src="/assets/dev.jpeg" className="rounded-tl-3xl rounded-br-3xl ml-10" width={300} height={300} alt="Sajed Shaikh" />
                 </div>
-                <div className="w-[55%]">
+                <div className="w-[60%]">
                     <Services />
                 </div>
             </div>
