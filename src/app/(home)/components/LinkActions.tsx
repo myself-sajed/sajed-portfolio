@@ -7,9 +7,9 @@ const LinkActions = () => {
     return (
         <div className='flex items-center justify-center gap-5 mt-24'>
             <Link href="https://github.com/myself-sajed">
-                <Image draggable={false} src="/assets/github.svg" alt="github" width={58} height={58} /></Link>
+                <Image draggable={false} src="/assets/icons/github.svg" alt="github" width={58} height={58} /></Link>
             <Link href="https://www.linkedin.com/in/shaikhsajed">
-                <Image draggable={false} src="/assets/linkedin.svg" alt="linkedin" width={52} height={52} />
+                <Image draggable={false} src="/assets/icons/linkedin.svg" alt="linkedin" width={52} height={52} />
             </Link>
             <Link href="#skills">
                 <Button type="submit" className="flex items-center gap-3">

@@ -10,7 +10,7 @@ const Timeline = () => {
             <ol className="relative border-s border-gray-200 dark:border-gray-700 z-30">
                 <li className="mb-10 ms-6">
                     <span className="absolute border flex items-center justify-center w-6 h-6 bg-white rounded-full -start-3">
-                        <Image height={42} width={42} className="rounded-full shadow-lg" src="/assets/srt.png" alt="Swami Ramanand Teerth Marathwada University, Nanded" />
+                        <Image height={42} width={42} className="rounded-full shadow-lg" src="/assets/projects/srt.png" alt="Swami Ramanand Teerth Marathwada University, Nanded" />
                     </span>
                     <div className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600">
                         <div className="items-center justify-between mb-3 sm:flex">
@@ -51,7 +51,7 @@ const Timeline = () => {
                                 {
                                     iconDetails.map((icon) => {
                                         return <div key={icon.name} className='flex items-center justify-center flex-col'>
-                                            <Image draggable={false} src={`/assets/${icon.icon}`} alt={icon.name} width={46} height={46} />
+                                            <Image draggable={false} src={`/assets/icons/${icon.icon}`} alt={icon.name} width={46} height={46} />
                                             <span>{icon.name}</span>
                                         </div>
                                     })

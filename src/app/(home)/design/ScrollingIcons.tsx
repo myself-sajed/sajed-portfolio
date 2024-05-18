@@ -67,7 +67,7 @@ const ScrollingIcons = () => {
                                 <Image
                                     draggable={false}
                                     className='grayscale-[50%]'
-                                    src={`/assets/${icon}`}
+                                    src={`/assets/icons/${icon}`}
                                     alt={icon}
                                     width={46}
                                     height={46}
@@ -88,7 +88,7 @@ const ScrollingIcons = () => {
                                 <Image
                                     draggable={false}
                                     className='grayscale-[50%]'
-                                    src={`/assets/${icon}`}
+                                    src={`/assets/icons/${icon}`}
                                     alt={icon}
                                     width={46}
                                     height={46}
