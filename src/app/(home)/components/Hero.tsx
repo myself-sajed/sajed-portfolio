@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Mail, Phone } from 'lucide-react'
 const Hero = () => {
     return (
-        <div className="h-screen w-full relative z-30 bg-white border-double border-b-4 border-primary">
+        <div className="h-screen w-full relative z-30 bg-white">
             <section className="cd-position-relative cd-z-index-1">
 
                 <div className="cd-position-relative cd-z-index-2">
@@ -27,8 +27,7 @@ const Hero = () => {
                                 <div className="typewriter">
                                     <p className="text-[4.5rem] font-extrabold text-slate-800">A Fullstack Web Developer</p>
                                 </div>
-                                <p className="text-[2rem] font-extrabold" style={{ lineHeight: '30px' }}> where,
-                                    <span className='text-primary'>&nbsp; &nbsp; I Think.  &nbsp; I Build.  &nbsp; I Solve.</span>
+                                <p className="text-[1.6rem] font-extrabold text-slate-800" style={{ lineHeight: '15px' }}> where, &nbsp; I &nbsp;bring&nbsp;<span className='text-primary'> Ideas </span>&nbsp;to&nbsp; Web.
                                 </p>
                                 <LinkActions />
 
