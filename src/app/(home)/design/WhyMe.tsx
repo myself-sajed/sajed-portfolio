@@ -1,15 +1,15 @@
 import Image from "next/image"
 import CircleSquare from "./CircleSquare"
 import Services from "./Services"
+import Title from "../components/Title"
 
 const WhyMe = () => {
 
 
     return (
-        <div id="why-me" className='w-full pt-10 border-double border-t-4 border-primary'>
-            <h1 className="text-xl font-semibold text-center">
-                <code className="text-primary">{`<Why Me? />`}</code>
-            </h1>
+        <div id="why-me" className='w-full pt-10'>
+            <Title title="Why me?" />
+
             <div className="m-[5rem] h-screen flex items-start justify-between">
 
                 <div className="relative mt-[5rem]">

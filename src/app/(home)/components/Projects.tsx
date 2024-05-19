@@ -1,16 +1,65 @@
 import ProjectCard from "../design/ProjectCard"
+import Title from "./Title"
 
 // https://codyhouse.co/ds/components/app/call-to-action-banner--img-no-padding
 const Projects = () => {
+
+    const projectDetails = [
+        {
+            title: "SRTMUN-UIMS",
+            desc: "A University Information Management System",
+            techStack: ["react.svg", "redux.svg", "tailwind.svg", "node.svg", "mongodb.svg",],
+            websiteURL: 'https://srtmun-uims.org',
+            githubURL: 'https://github.com/myself-sajed/SRTMUN-UIMS',
+            imgURL: 'p3.png'
+        },
+        {
+            title: "Code Share",
+            desc: "A University Information Management System",
+            techStack: ["react.svg", "redux.svg", "tailwind.svg", "node.svg", "mongodb.svg",],
+            websiteURL: 'https://codeshare-lyart.vercel.app/',
+            githubURL: 'https://github.com/myself-sajed/CodeShare',
+            imgURL: 'p1.png'
+        },
+        {
+            title: "Indian Toll Calculator",
+            desc: "A University Information Management System",
+            techStack: ["react.svg", "redux.svg", "tailwind.svg", "node.svg", "mongodb.svg",],
+            websiteURL: 'https://indian-toll-calculator.vercel.app/',
+            githubURL: 'https://github.com/myself-sajed/indian-toll-calculator',
+            imgURL: 'p2.png'
+        }
+
+    ]
+
+
     return (
-        <div id="projects" className='w-full pt-10 pb-[4rem] border-double border-t-4 border-primary'>
-            <h1 className="text-xl font-semibold text-center">
-                <code className="text-primary">{`<Major Projects />`}</code>
-            </h1>
-            <div className="mt-10 px-10 grid grid-cols-3 gap-10">
-                <ProjectCard title="SRTMUN-UIMS" description="University Information Management" imgUrl="/assets/projects/p3.png" url="https://codeshare.netlify.app" />
-                <ProjectCard title="CodeShare" description="Share code in an easy way" imgUrl="/assets/projects/p1.png" url="https://codeshare.netlify.app" />
-                <ProjectCard title="Indian Toll Calculator" description="Calculate Indian tolls with ease" imgUrl="/assets/projects/p2.png" url="https://codeshare.netlify.app" />
+        <div>
+            <div id="fullstack-projects" className='w-full py-10 pb-[4rem] shadow-border'>
+                <Title title="Major Projects" />
+
+                <div className="mt-10 px-10 grid grid-cols-3 gap-10">
+                    {
+                        projectDetails.map((project) => {
+                            return (
+                                <ProjectCard key={project.title} project={project} />
+                            )
+                        })
+                    }
+                </div>
+            </div>
+            <div id="ui-projects" className='w-full py-10 pb-[4rem] shadow-border'>
+                <Title title="UI Projects" />
+
+                <div className="mt-10 px-10 grid grid-cols-3 gap-10">
+                    {
+                        projectDetails.map((project) => {
+                            return (
+                                <ProjectCard key={project.title} project={project} />
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
     )
