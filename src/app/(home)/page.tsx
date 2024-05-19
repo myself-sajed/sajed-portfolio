@@ -3,6 +3,8 @@ import Experience from "./components/Experience"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Projects from "./components/Projects"
+import HorizontalScrolling from "./design/HorizontalScrolling"
+import HorizontalScroll from "./design/HorizontalScrolling"
 import WhyMe from "./design/WhyMe"
 
 const Home = () => {
@@ -10,12 +12,12 @@ const Home = () => {
         <div className="w-full">
             <Hero />
             <Experience />
-            <div className="relative z-40 bg-white">
-                <Projects />
-                <WhyMe />
-                <Contact />
-                <Footer />
-            </div>
+            <HorizontalScrolling />
+            <Projects />
+            <WhyMe />
+            <Contact />
+            <Footer />
+
         </div>
     )
 }
