@@ -14,22 +14,21 @@ const Projects = () => {
             imgURL: 'p3.png'
         },
         {
-            title: "Code Share",
-            desc: "A University Information Management System",
-            techStack: ["react.svg", "redux.svg", "tailwind.svg", "node.svg", "mongodb.svg",],
-            websiteURL: 'https://codeshare-lyart.vercel.app/',
-            githubURL: 'https://github.com/myself-sajed/CodeShare',
+            title: "Connector",
+            desc: "A reliable chatting and realtime coding platform.",
+            techStack: ["next.svg", "redux.svg", "tailwind.svg", "node.svg", "mongodb.svg", "socket.svg"],
+            websiteURL: 'https://connector-sajed.vercel.app/',
+            githubURL: 'https://github.com/myself-sajed/connector-client',
             imgURL: 'p1.png'
         },
         {
-            title: "Indian Toll Calculator",
-            desc: "A University Information Management System",
-            techStack: ["react.svg", "redux.svg", "tailwind.svg", "node.svg", "mongodb.svg",],
-            websiteURL: 'https://indian-toll-calculator.vercel.app/',
-            githubURL: 'https://github.com/myself-sajed/indian-toll-calculator',
+            title: "PhonePe Web (UI Only)",
+            desc: "A UI PhonePe Web version with mock banking services.",
+            techStack: ["react.svg", "redux.svg", "tailwind.svg", "firebase.svg"],
+            websiteURL: 'https://connector-sajed.vercel.app/',
+            githubURL: 'https://github.com/myself-sajed/connector-client',
             imgURL: 'p2.png'
-        }
-
+        },
     ]
 
 
@@ -37,19 +36,6 @@ const Projects = () => {
         <div>
             <div id="fullstack-projects" className='w-full py-10 pb-[4rem] shadow-border'>
                 <Title title="Major Projects" />
-
-                <div className="mt-10 px-10 grid grid-cols-3 gap-10">
-                    {
-                        projectDetails.map((project) => {
-                            return (
-                                <ProjectCard key={project.title} project={project} />
-                            )
-                        })
-                    }
-                </div>
-            </div>
-            <div id="ui-projects" className='w-full py-10 pb-[4rem] shadow-border'>
-                <Title title="UI Projects" />
 
                 <div className="mt-10 px-10 grid grid-cols-3 gap-10">
                     {
