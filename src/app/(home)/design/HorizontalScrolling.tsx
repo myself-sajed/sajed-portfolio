@@ -32,5 +32,5 @@ const HorizontalScrollCarousel = () => {
 export default HorizontalScrollCarousel
 
 
-const textArr = [{ title: "Observe.", color: "text-blue-300" }, { title: "Analyse.", color: "text-blue-400" }, { title: "Design.", color: "text-blue-500" }, { title: "Build.", color: "text-blue-600" }, { title: "Deliver.", color: "text-blue-700" }];
+const textArr = [{ title: "I Observe.", color: "text-blue-300" }, { title: "Analyse.", color: "text-blue-400" }, { title: "Design.", color: "text-blue-500" }, { title: "Build.", color: "text-blue-600" }, { title: "Deliver.", color: "text-blue-700" }];
 
