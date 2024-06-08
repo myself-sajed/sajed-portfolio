@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: { project: IProjectItem }) => {
     return (
         <div className="cta-banner bg-white rounded-xl overflow-hidden border-2 cursor-pointer group">
             <div className="grid items-center gap-6">
-                <figure className="min-w-2 lg:col-2">
+                <figure className="min-w-2 lg:col-2 border-b">
                     <Image className="w-full rounded-t-lg cursor-pointer group-hover:brightness-75 transition duration-300" src={`/assets/projects/${project.imgURL}`} height={1500} width={1500} alt="Image description" />
                 </figure>
                 <div className="p-6 min-w-0 lg:col-1">
