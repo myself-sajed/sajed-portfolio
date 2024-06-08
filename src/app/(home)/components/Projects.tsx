@@ -25,8 +25,8 @@ const Projects = () => {
             title: "PhonePe Web (UI Only)",
             desc: "A UI PhonePe Web version with mock banking services.",
             techStack: ["react.svg", "redux.svg", "tailwind.svg", "firebase.svg"],
-            websiteURL: 'https://connector-sajed.vercel.app/',
-            githubURL: 'https://github.com/myself-sajed/connector-client',
+            websiteURL: 'https://phonepe-web.vercel.app/',
+            githubURL: 'https://github.com/myself-sajed/PhonePe',
             imgURL: 'p2.png'
         },
     ]
