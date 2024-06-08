@@ -42,7 +42,7 @@ const Timeline = () => {
                     <div className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600">
                         <div className="items-center justify-between mb-3 sm:flex">
                             <div className="text-sm font-normal text-gray-500 lex dark:text-gray-300">I have always been a tech enthusiast with a passion for creating websites. This passion led me to realize that web development is what I truly love. Driven by this discovery, I immersed myself in learning and mastering new skills.</div>
-                            <i className="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">Journey</i>
+                            <i className="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">Skills</i>
                         </div>
                         <div className="px-3 pt-3 pb-4 text-xs font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50">
                             <p className='text-center mt-2 font-semibold text-primary '>Today, I have <span className="font-bold text-sm mx-1">2+ Years</span> of experience in </p>
