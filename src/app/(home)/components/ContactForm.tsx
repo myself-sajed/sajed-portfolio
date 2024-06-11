@@ -16,12 +16,12 @@ export function ContactForm() {
 
     return (
         <form onSubmit={handleContact} className="w-full lg:grid lg:grid-cols-2 relative">
-            <div className="mt-[5rem]">
+            <div className="mt-[10rem] lg:mt-[5rem]">
                 <Stripe />
             </div>
             <div className="flex items-center justify-center py-12 mt-[3rem]">
-                <div className="w-[70%]">
-                    <div className="grid gap-2 text-center mb-5">
+                <div className="w-[90%] md:w-[60%] lg:w-[70%]">
+                    <div className="grid gap-2 text-center mb-5 mt-[4rem] lg:mt-0">
                         <h1 className="text-3xl font-bold">Get in touch</h1>
                         <p className="text-balance text-muted-foreground">
                             I would love to hear you out!
@@ -33,7 +33,7 @@ export function ContactForm() {
                             <Input
                                 id="name"
                                 type="text"
-                                placeholder="Shaikh Sajed"
+                                placeholder="Phunsukh Wangdu"
                                 required
                             />
                         </div>
@@ -42,16 +42,13 @@ export function ContactForm() {
                             <Input
                                 id="email"
                                 type="email"
-                                placeholder="m@example.com"
+                                placeholder="rancho@example.com"
                                 required
                             />
                         </div>
                         <div className="grid gap-2">
                             <Label htmlFor="message-2">Your Message</Label>
-                            <Textarea placeholder="Type your message here." id="message-2" />
-                            <p className="text-xs text-muted-foreground text-right">
-                                I am Open! {`Let's`} Discuss.
-                            </p>
+                            <Textarea placeholder="Tell me, what's in your mind?" id="message-2" />
                         </div>
                         <Button type="submit" className="w-full mt-4 flex items-center gap-3">
                             <span>Shooooot</span> <ArrowRight strokeWidth={3} size={16} />

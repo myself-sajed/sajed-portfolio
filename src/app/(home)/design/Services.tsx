@@ -44,12 +44,12 @@ const Services = () => {
         <div>
             <ul className="space-y-5">
                 <li className="max-w-lg flex gap-x-2 sm:gap-x-4">
-                    <Image className="inline-block size-9 rounded-full object-cover" src="/assets/client.jpg" width={100} height={100} alt="Image Description" />
+                    <Image className="inline-block size-6 sm:size-7 md:size-8 lg:size-9 rounded-full object-cover" src="/assets/client.jpg" width={100} height={100} alt="Image Description" />
 
                     <div>
-                        <div className="bg-white border border-gray-200 rounded-e-2xl rounded-bl-2xl p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
+                        <div className="bg-white border border-gray-200 rounded-e-2xl rounded-bl-2xl p-2 lg:p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
                             <div className="space-y-1.5">
-                                <p className="text-sm text-gray-800 dark:text-white">
+                                <p className="text-xs sm:text-sm text-gray-800 dark:text-white">
                                     Nice portfolio! But, why should we choose you?
                                 </p>
                             </div>
@@ -57,20 +57,20 @@ const Services = () => {
                     </div>
                 </li>
 
-                <li className="flex ms-auto gap-x-2 sm:gap-x-4 w-[90%]">
+                <li className="flex ms-auto gap-x-2 sm:gap-x-4 sm:w-[90%]">
                     <div className="grow space-y-3">
                         <div className="inline-flex flex-col justify-end">
-                            <div className="inline-block bg-blue-600 rounded-s-2xl rounded-br-2xl p-4 shadow-sm">
-                                <p className="text-sm text-white text-end font-semibold">
-                                    {`Here's`} why you should choose me:
+                            <div className="inline-block bg-blue-600 rounded-s-2xl rounded-br-2xl p-2 lg:p-4 shadow-sm">
+                                <p className="text-xs sm:text-sm text-white text-end font-semibold">
+                                    You should choose me because I provide:
                                 </p>
 
                                 <div className='grid grid-cols-2 gap-5 mt-5'>
                                     {
                                         services.map((service) => {
                                             return <div key={service.title}>
-                                                <p className="text-sm text-white">{service.title}</p>
-                                                <p className="text-[11px] text-gray-200">{service.desc}</p>
+                                                <p className="text-xs sm:text-sm text-white">{service.title}</p>
+                                                <p className="text-[9px] sm:text-[11px] text-gray-200">{service.desc}</p>
                                             </div>
                                         })
                                     }
@@ -86,16 +86,16 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <Image className="inline-block size-9 rounded-full object-cover" src="/assets/dev.jpeg" width={100} height={100} alt="Image Description" />
+                    <Image className="inline-block size-6 sm:size-7 md:size-8 lg:size-9 rounded-full object-cover" src="/assets/dev.jpeg" width={100} height={100} alt="Image Description" />
                 </li>
 
                 <li className="max-w-lg flex gap-x-2 sm:gap-x-4">
-                    <Image className="inline-block size-9 rounded-full object-cover" src="/assets/client.jpg" width={100} height={100} alt="Image Description" />
+                    <Image className="inline-block size-6 sm:size-7 md:size-8 lg:size-9 rounded-full object-cover" src="/assets/client.jpg" width={100} height={100} alt="Image Description" />
 
                     <div>
-                        <div className="bg-white border border-gray-200 rounded-e-2xl rounded-bl-2xl p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
+                        <div className="bg-white border border-gray-200 rounded-e-2xl rounded-bl-2xl p-2 lg:p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
                             <div className="space-y-1.5">
-                                <p className="text-sm text-gray-800 dark:text-white">
+                                <p className="text-xs sm:text-sm text-gray-800 dark:text-white">
                                     Salary kitne loge bhaiya, discuss karle?
                                 </p>
                             </div>

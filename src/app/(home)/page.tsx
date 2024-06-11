@@ -17,7 +17,6 @@ const Home = () => {
             <WhyMe />
             <Contact />
             <Footer />
-
         </div>
     )
 }

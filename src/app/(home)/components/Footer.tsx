@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="mt-[4rem] border-double border-t-4 border-primary w-full bg-white relative z-40">
             <div className="p-4 text-center my-5">
-                <h1 className="scroll-m-20 text-xl font-extrabold tracking-tight text-center">
+                <h1 className="scroll-m-20 text-lg md:text-xl font-extrabold tracking-tight text-center">
                     Crafted with 💖 by Shaikh Sajed
                 </h1>
 

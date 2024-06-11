@@ -5,11 +5,11 @@ import { iconDetails } from './ScrollingIcons'
 
 const Timeline = () => {
     return (
-        <div className="w-[65%] mx-auto mt-[4rem]">
+        <div className="w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%] xl:w-[65%] mx-auto mt-[4rem]">
 
             <ol className="relative border-s border-gray-200 dark:border-gray-700 z-30">
                 <li className="mb-10 ms-6">
-                    <span className="absolute border flex items-center justify-center w-6 h-6 bg-white rounded-full -start-3">
+                    <span className="absolute border flex items-center justify-center w-4 sm:w-6 h-4 sm:h-6 bg-white rounded-full -start-[8px] sm:-start-3">
                         <Image height={42} width={42} className="rounded-full shadow-lg" src="/assets/projects/srt.png" alt="Swami Ramanand Teerth Marathwada University, Nanded" />
                     </span>
                     <div className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600">
@@ -47,12 +47,20 @@ const Timeline = () => {
                         <div className="px-3 pt-3 pb-4 text-xs font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50">
                             <p className='text-center mt-2 font-semibold text-primary '>Today, I have <span className="font-bold text-sm mx-1">2+ Years</span> of experience in </p>
 
-                            <div className="grid grid-cols-4 items-center gap-y-10 my-8">
+                            <div className="grid grid-cols-3 sm:grid-cols-4 items-center gap-y-10 my-8">
                                 {
                                     iconDetails.map((icon) => {
                                         return <div key={icon.name} className='flex items-center justify-center flex-col'>
-                                            <Image draggable={false} src={`/assets/icons/${icon.icon}`} alt={icon.name} width={46} height={46} />
-                                            <span>{icon.name}</span>
+                                            {/* <Image draggable={false} src={`/assets/icons/${icon.icon}`} alt={icon.name} width={46} height={46} /> */}
+                                            <Image
+                                                draggable={false}
+                                                src={`/assets/icons/${icon.icon}`}
+                                                alt={icon.name}
+                                                width={46}
+                                                height={46}
+                                                className="w-8 h-8 sm:w-12 sm:h-12"
+                                            />
+                                            <span className='text-[10.5px] sm:text-xs'>{icon.name}</span>
                                         </div>
                                     })
                                 }
