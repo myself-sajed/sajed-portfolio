@@ -1,7 +1,6 @@
 import ProjectCard from "../design/ProjectCard"
 import Title from "./Title"
 
-// https://codyhouse.co/ds/components/app/call-to-action-banner--img-no-padding
 const Projects = () => {
 
     const projectDetails = [

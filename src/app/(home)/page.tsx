@@ -4,7 +4,6 @@ import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Projects from "./components/Projects"
 import HorizontalScrolling from "./design/HorizontalScrolling"
-import HorizontalScroll from "./design/HorizontalScrolling"
 import WhyMe from "./design/WhyMe"
 
 const Home = () => {
