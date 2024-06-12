@@ -5,13 +5,60 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import Stripe from "../design/Stripe"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Loader } from "lucide-react"
+import { useState } from "react"
+import { toast } from "sonner"
+import emailjs from '@emailjs/browser'
 
 export function ContactForm() {
 
-    const handleContact = (e: React.FormEvent<HTMLFormElement>) => {
+    const initialState = { senderName: "", senderEmail: "", message: "" }
+    const [contactInfo, setContactInfo] = useState(initialState)
+    const [isLoading, setIsLoading] = useState(false)
+
+    const handleContact = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        alert('Contact form clicked')
+        if (!contactInfo.senderName) {
+            toast.error("Please enter your name.")
+            return
+        }
+
+        if (!contactInfo.senderEmail) {
+            toast.error("Please enter your email.")
+            return
+        }
+
+        if (!contactInfo.message) {
+            toast.error("Please enter your message.")
+            return
+        }
+
+        try {
+
+            setIsLoading(true)
+
+            const serviceId = "service_h55orr9"
+            const templateId = "template_8zao2wy"
+            const publicKey = "IQVaMuxU8UTt_6Vv8"
+
+            await emailjs.send(serviceId, templateId, contactInfo, publicKey);
+            setContactInfo(() => initialState)
+            toast.success("Message sent successfully.")
+
+        } catch (e) {
+            toast.error("Could not send message, try again later.")
+            console.log("Message error:", e)
+        } finally {
+            setIsLoading(false)
+        }
+
+
+    }
+
+    const handleChange = (key: string, value: string) => {
+        setContactInfo((prev) => {
+            return { ...prev, [key]: value }
+        })
     }
 
     return (
@@ -31,6 +78,8 @@ export function ContactForm() {
                         <div className="grid gap-2">
                             <Label htmlFor="name">Name</Label>
                             <Input
+                                onChange={(e) => handleChange("senderName", e.target.value)}
+                                value={contactInfo["senderName"]}
                                 id="name"
                                 type="text"
                                 placeholder="Phunsukh Wangdu"
@@ -40,6 +89,8 @@ export function ContactForm() {
                         <div className="grid gap-2">
                             <Label htmlFor="email">Email</Label>
                             <Input
+                                onChange={(e) => handleChange("senderEmail", e.target.value)}
+                                value={contactInfo["senderEmail"]}
                                 id="email"
                                 type="email"
                                 placeholder="rancho@example.com"
@@ -47,11 +98,17 @@ export function ContactForm() {
                             />
                         </div>
                         <div className="grid gap-2">
-                            <Label htmlFor="message-2">Your Message</Label>
-                            <Textarea placeholder="Tell me, what's in your mind?" id="message-2" />
+                            <Label htmlFor="message">Your Message</Label>
+                            <Textarea onChange={(e) => handleChange("message", e.target.value)}
+                                value={contactInfo["message"]}
+                                placeholder="Tell me, what's in your mind?"
+                                id="message" />
                         </div>
-                        <Button type="submit" className="w-full mt-4 flex items-center gap-3">
-                            <span>Shooooot</span> <ArrowRight strokeWidth={3} size={16} />
+                        <Button type="submit" disabled={isLoading} className="w-full mt-4 flex items-center gap-3">
+                            {
+                                isLoading ? <><Loader size={17} className="animate-spin" /><span>Sending...</span></>
+                                    : <><span>Shooooot</span> <ArrowRight strokeWidth={3} size={16} /></>
+                            }
                         </Button>
                     </div>
 
