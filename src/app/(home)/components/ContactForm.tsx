@@ -10,7 +10,7 @@ import { useState } from "react"
 import { toast } from "sonner"
 import emailjs from '@emailjs/browser'
 
-export function ContactForm() {
+export function ContactForm({ emailConfig }: { emailConfig: { [key: string]: string } }) {
 
     const initialState = { senderName: "", senderEmail: "", message: "" }
     const [contactInfo, setContactInfo] = useState(initialState)
@@ -36,12 +36,10 @@ export function ContactForm() {
         try {
 
             setIsLoading(true)
-
-            const serviceId = "service_h55orr9"
-            const templateId = "template_8zao2wy"
-            const publicKey = "IQVaMuxU8UTt_6Vv8"
-
-            await emailjs.send(serviceId, templateId, contactInfo, publicKey);
+            await emailjs.send(emailConfig.serviceId,
+                emailConfig.templateId,
+                contactInfo,
+                emailConfig.publicKey);
             setContactInfo(() => initialState)
             toast.success("Message sent successfully.")
 
