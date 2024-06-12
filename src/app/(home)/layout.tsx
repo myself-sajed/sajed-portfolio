@@ -3,6 +3,7 @@ import "../globals.css";
 import "../features.css";
 import { Sora as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/sonner"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
       )}>
         <div className="hero-gradients relative w-full">
           {children}
+          <Toaster />
         </div>
       </body>
     </html>
