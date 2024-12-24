@@ -15,7 +15,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10">
+    <main className="flex flex-col min-h-[100dvh] space-y-10 ">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
@@ -31,9 +31,9 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-              {/* <BlurFade delay={BLUR_FADE_DELAY}>
+              <BlurFade delay={BLUR_FADE_DELAY}>
                 <DownloadResume />
-              </BlurFade> */}
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border-4 border-[#9a6e6d]">
