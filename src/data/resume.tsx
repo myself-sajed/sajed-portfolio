@@ -162,9 +162,9 @@ export const DATA = {
     {
       title: "Connector",
       desc: [
-        "Real-time medical chat platform for patient-doctor interactions.",
+        "Real-time medical chat platform for user interactions.",
         "Powered by Socket.IO for instant bi-directional messaging.",
-        "Supports AI-assisted replies and automatic case creation.",
+        "Supports bidirection coding platform for quick code sharing and reviewing code blocks.",
         "Built on the MERN stack with dynamic updates and user-friendly interface."
       ],
       techStack: ["Next.js", "Redux", "Tailwind CSS", "Node.js", "MongoDB", "Socket.IO"],
