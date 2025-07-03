@@ -15,7 +15,7 @@ interface Props {
   title: string;
   href?: string;
   githubURL?: string;
-  description: string;
+  description: string[];
   tags: readonly string[];
   link?: string;
   image?: string;
@@ -31,7 +31,6 @@ interface Props {
 export function ProjectCard({
   title,
   href,
-  githubURL,
   description,
   tags,
   link,
@@ -42,11 +41,13 @@ export function ProjectCard({
   return (
     <Card
       className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all p-5 duration-300 ease-out h-full"
+        "flex flex-col overflow-hidden gap-3 border hover:shadow-lg transition-all p-5 duration-300 ease-out h-full"
       }
     >
-      <Link
+      <a
         href={href || "#"}
+        target="_blank"
+        rel="noopener noreferrer"
         className={cn("block cursor-pointer", className)}
       >
         {image && (
@@ -55,38 +56,43 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
+            className="w-full overflow-hidden object-contain object-top rounded-md"
           />
         )}
-      </Link>
+      </a>
       <CardHeader className="px-2">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
-          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-            {description}
-          </Markdown>
+          <div className="-space-y-1.5">
+            {
+              description.map((desc, index) => (
+                <Markdown key={index} className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+                  {`- ${desc}`}
+                </Markdown>
+              ))
+            }
+          </div>
+
         </div>
       </CardHeader>
       <CardContent className="mt-auto flex flex-col px-2">
         {tags && tags.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
             {tags?.map((tag) => (
-              <Image
+              <span
                 key={tag}
-                height={25}
-                width={25}
-                src={`/assets/icons/${tag}`}
-                className="border-2 border-blue-500 rounded-full p-0.5"
-                alt={tag}
-              />
+                className="text-[10px] bg-muted font-medium rounded-full px-2.5"
+              >
+                {tag}
+              </span>
             ))}
           </div>
         )}
       </CardContent>
-      <CardFooter className="px-2 pb-2 mt-4">
+      <CardFooter className="px-2 pb-2">
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (

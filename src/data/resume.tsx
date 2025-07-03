@@ -7,10 +7,6 @@ export const DATA = {
   url: "https://dillion.io",
   location: "Hyderabad, India",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description:
-    "An experienced Full Stack Web Developer passionate about building scalable and impactful web solutions, dedicated to bringing ideas to life on the web.",
-  summary:
-    "A Full Stack Web Developer with expertise in building scalable and efficient web solutions using the MERN stack. Skilled in backend systems, database management, and modern DevOps practices, with a Master's degree in Computer Applications. I’m passionate about turning complex challenges into seamless digital experiences that deliver real value and user satisfaction.",
   avatarUrl: "/assets/icons/me.jpg",
   skills: [
     {
@@ -60,7 +56,20 @@ export const DATA = {
     {
       name: "AWS",
       icon: "aws.svg"
-    }
+    },
+    {
+      name: "Kafka",
+      icon: "kafka.svg"
+    },
+    {
+      name: "Inngest AI",
+      icon: "inngest.png"
+    },
+    {
+      name: "Pinecone",
+      icon: "pinecone.svg"
+    },
+
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -99,8 +108,11 @@ export const DATA = {
       logoUrl: "/assets/icons/ideamind.jpg",
       start: "June 2024",
       end: "Present",
-      description:
-        "",
+      description: [
+        "Led end-to-end development of 4 major platforms created from the ground-up with strong frontend and backend ownership.",
+        "Improved scalability, UX, and delivery speed by designing reusable components, RBAC systems, and high-performance UIs.",
+        "Reduced manual effort by ~60%, achieved >90% UAT success, and laid groundwork for AI integration using LLMs and Inngest."
+      ],
     },
     {
       company: "SRTMUN",
@@ -110,8 +122,11 @@ export const DATA = {
       logoUrl: "/assets/icons/srt.png",
       start: "May 2022",
       end: "May 2024",
-      description:
-        "",
+      description: [
+        "Built a full-scale University Information Management System from scratch, covering students, staff, and faculty operations.",
+        "Developed 10+ critical reporting modules (e.g., CAS, PBAS, NIRF) with dashboards and auto-generated reports for departments and schools.",
+        "Reduced manual paperwork by 50% through digitization and an intuitive onboarding guide for all users (teachers, admin, staff)."
+      ]
     },
   ],
   education: [
@@ -119,28 +134,56 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "SRTMUN-UIMS",
-      desc: "A University Information Management System.",
-      techStack: ["react.svg", "redux.svg", "tailwind.svg", "node.svg", "mongodb.svg",],
-      websiteURL: 'https://srtmun-uims.org',
-      githubURL: 'https://github.com/myself-sajed/SRTMUN-UIMS',
-      imgURL: 'p3.png'
+      title: "Find My Doctor",
+      desc: [
+        "AI-powered medical triage platform built using NLP.",
+        "Analyzes symptoms from natural language queries.",
+        "Recommends suitable doctors based on urgency, specialization, and context relevance."
+      ],
+      techStack: ["React JS", "Zustand", "Node JS", "MongoDB", "Inngest", "Pinecone", "Tailwind CSS"],
+      websiteURL: 'https://find-my-doctor-app.vercel.app/',
+      githubURL: 'https://github.com/myself-sajed/fmd-client',
+      imgURL: 'fmd.png'
+    },
+    {
+      title: "Round Pizza Microservices Architecture",
+      desc: [
+        "Microservices system with separate services for Auth, Product, Orders, Category, Socket, and Notifications.",
+        "Uses API Gateway with Redis caching and dedicated databases (PostgreSQL and MongoDB).",
+        "Real-time communication via Socket.IO and notifications through Nodemailer.",
+        "Supports client and admin panels routed through the gateway for clean separation."
+      ],
+      techStack: ["React JS", "Next JS", "Zustand", "Node JS", "Express JS", "PostgreSQL", "MongoDB", "Redis", "Socket.io", "Kafka", "Tailwind CSS"],
+      websiteURL: 'https://app.eraser.io/workspace/bvBOgZYuP9cvNw376AIP?origin=share',
+      githubURL: 'https://app.eraser.io/workspace/bvBOgZYuP9cvNw376AIP?origin=share',
+      imgURL: 'round.png'
     },
     {
       title: "Connector",
-      desc: "A reliable chatting and realtime coding platform.",
-      techStack: ["next.svg", "redux.svg", "tailwind.svg", "node.svg", "mongodb.svg", "socket.svg"],
+      desc: [
+        "Real-time medical chat platform for patient-doctor interactions.",
+        "Powered by Socket.IO for instant bi-directional messaging.",
+        "Supports AI-assisted replies and automatic case creation.",
+        "Built on the MERN stack with dynamic updates and user-friendly interface."
+      ],
+      techStack: ["Next.js", "Redux", "Tailwind CSS", "Node.js", "MongoDB", "Socket.IO"],
       websiteURL: 'https://connector-sajed.vercel.app/',
       githubURL: 'https://github.com/myself-sajed/connector-client',
-      imgURL: 'p1.png'
+      imgURL: 'connector.png'
     },
     {
-      title: "PhonePe Web (UI Only)",
-      desc: "A UI PhonePe Web version with mock banking services.",
-      techStack: ["react.svg", "redux.svg", "tailwind.svg", "firebase.svg"],
-      websiteURL: 'https://phonepe-web.vercel.app/',
-      githubURL: 'https://github.com/myself-sajed/PhonePe',
-      imgURL: 'p2.png'
-    },
-  ],
+      title: "SRTMUN-UIMS",
+      desc: [
+        "Comprehensive platform to manage university data: faculty, students, staff, and admin.",
+        "Generates 10+ institutional reports like PM-USHA, CAS, PBAS, NIRF, and UDRF.",
+        "Includes data visualizations and dashboards for performance analysis.",
+        "Enabled SRTMUN to move toward fully digital, paperless administration."
+      ],
+      techStack: ["React", "Redux", "Tailwind CSS", "Node.js", "MongoDB"],
+      websiteURL: 'https://srtmun-uims.org',
+      githubURL: 'https://github.com/myself-sajed/SRTMUN-UIMS',
+      imgURL: 'srtmun.png'
+    }
+  ]
+
 } as const;

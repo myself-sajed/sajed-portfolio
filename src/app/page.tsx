@@ -4,6 +4,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
+import { Skills } from "@/components/skills";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
@@ -11,7 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
-const BLUR_FADE_DELAY = 0.04;
+export const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
@@ -24,13 +25,16 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name} 👋`}
+                text={`Hi, I'm ${DATA.name}`}
               />
-              <BlurFadeText
+              <BlurFade
                 className="max-w-[600px] text-sm"
                 delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
+              >
+                <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+                  I have a <b>3+ years of</b> experience as a <b>Full Stack Web Developer</b>, passionate about building scalable and impactful web solutions, dedicated to bringing ideas to life on the web.
+                </p>
+              </BlurFade>
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <DownloadResume />
               </BlurFade>
@@ -49,9 +53,9 @@ export default function Page() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
+          <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+            A results-driven <b>Full Stack Web Developer</b> with <b>3+ years</b> deep expertise in building scalable, performant, and secure web applications using the <b>MERN stack</b>. Experienced in designing microservices architectures, optimizing backend systems, and crafting intuitive user interfaces that prioritize usability and impact. Skilled in bridging frontend and backend seamlessly, delivering robust APIs, and integrating modern DevOps workflows to ensure reliability and efficiency across deployments. Passionate about transforming complex business needs into elegant, user-centric digital solutions that scale effortlessly.
+          </p>
         </BlurFade>
       </section>
       <section id="work">
@@ -59,24 +63,26 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
-          {DATA.work.map((work, id) => (
-            <BlurFade
-              key={work.company}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <ResumeCard
+          <div className="space-y-5">
+            {DATA.work.map((work, id) => (
+              <BlurFade
                 key={work.company}
-                logoUrl={work.logoUrl}
-                altText={work.company}
-                title={work.company}
-                subtitle={work.title}
-                href={work.href}
-                badges={work.badges}
-                period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
-              />
-            </BlurFade>
-          ))}
+                delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+              >
+                <ResumeCard
+                  key={work.company}
+                  logoUrl={work.logoUrl}
+                  altText={work.company}
+                  title={work.company}
+                  subtitle={work.title}
+                  href={work.href}
+                  badges={work.badges}
+                  period={`${work.start} - ${work.end ?? "Present"}`}
+                  description={work.description as unknown as string[]}
+                />
+              </BlurFade>
+            ))}
+          </div>
         </div>
       </section>
       <section id="skills">
@@ -84,23 +90,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-10 -ml-10 md:-ml-7 pl-5 sm:pl-3 md:pl-0">
-            {DATA.skills.map(({ icon, name }, id) => (
-              <BlurFade key={name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <div key={icon} className="flex flex-col items-center">
-                  <Image
-                    draggable={false}
-                    src={`/assets/icons/${icon}`}
-                    alt={name}
-                    width={46}
-                    height={46}
-                    className="w-10 h-10 sm:w-12 sm:h-12"
-                  />
-                  <span className='text-xs'>{name}</span>
-                </div>
-              </BlurFade>
-            ))}
-          </div>
+          <Skills />
         </div>
       </section>
       <section id="projects">
@@ -130,10 +120,10 @@ export default function Page() {
               >
                 <ProjectCard
                   href={project.websiteURL}
-                  githubURL={project.githubURL}
+                  githubURL={project?.githubURL}
                   key={project.title}
                   title={project.title}
-                  description={project.desc}
+                  description={project.desc as unknown as string[]}
                   tags={project.techStack}
                   image={project.imgURL}
                   links={[

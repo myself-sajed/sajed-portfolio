@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import Markdown from "react-markdown";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -17,7 +18,7 @@ interface ResumeCardProps {
   href?: string;
   badges?: readonly string[];
   period: string;
-  description?: string;
+  description: string[];
 }
 export const ResumeCard = ({
   logoUrl,
@@ -85,24 +86,18 @@ export const ResumeCard = ({
               </div>
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
-          </CardHeader>
-          {description && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{
-                opacity: isExpanded ? 1 : 0,
+            {/* Add bullet points of work done */}
 
-                height: isExpanded ? "auto" : 0,
-              }}
-              transition={{
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="mt-2 text-xs sm:text-sm"
-            >
-              {description}
-            </motion.div>
-          )}
+          </CardHeader>
+          <div className="-space-y-1.5">
+            {
+              description.map((desc, index) => (
+                <Markdown key={index} className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+                  {`- ${desc}`}
+                </Markdown>
+              ))
+            }
+          </div>
         </div>
       </Card>
     </Link>
