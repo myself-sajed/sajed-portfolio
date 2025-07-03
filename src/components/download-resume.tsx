@@ -14,7 +14,16 @@ const DownloadResume = () => {
     };
 
     return (
-        <p onClick={downloadResume} className='text-blue-600 hover:underline font-semibold text-sm cursor-pointer'>Download Resume</p>
+        <>
+            <p onClick={downloadResume}
+                className='hover:text-blue-600 hover:underline font-semibold cursor-pointer'>
+                Download Resume
+            </p>
+            <a href="mailto:digitalsajed@gmail.com" target="_blank"
+                rel="noopener noreferrer" className='hover:text-blue-600 hover:underline font-semibold cursor-pointer'>digitalsajed@gmail.com</a>
+            <a href="tel:7773936878" target="_blank"
+                rel="noopener noreferrer" className='hover:text-blue-600 hover:underline font-semibold cursor-pointer'>7773936878</a>
+        </>
     )
 }
 
