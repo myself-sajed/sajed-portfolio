@@ -1,8 +1,7 @@
-import { cn } from "@/lib/utils";
+import { BLUR_FADE_DELAY, cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 import { DATA } from "@/data/resume";
 import BlurFade from "./magicui/blur-fade";
-import { BLUR_FADE_DELAY } from "@/app/page";
 import Image from "next/image";
 
 export function Skills() {

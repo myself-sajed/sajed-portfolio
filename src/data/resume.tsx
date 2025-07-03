@@ -5,6 +5,7 @@ export const DATA = {
   name: "Shaikh Sajed",
   initials: "SS",
   url: "https://dillion.io",
+  description: "Shaikh Sajed | Fullstack Web Developer, who loves Building Scalable Web Applications",
   location: "Hyderabad, India",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   avatarUrl: "/assets/icons/me.jpg",

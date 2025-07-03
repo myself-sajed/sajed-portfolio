@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import Portfolio from "./portfolio";
 import { TerminalLoading } from "./terminal-loading";
 
-export const BLUR_FADE_DELAY = 0.04;
-
 export default function Page() {
   const [showLoading, setShowLoading] = useState(false);
   const [showPortfolio, setShowPortfolio] = useState(false);

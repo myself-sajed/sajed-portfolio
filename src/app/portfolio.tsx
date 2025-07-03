@@ -8,11 +8,10 @@ import { Skills } from "@/components/skills";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import { BLUR_FADE_DELAY } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
-
-export const BLUR_FADE_DELAY = 0.04;
 
 export default function Portfolio() {
     return (
