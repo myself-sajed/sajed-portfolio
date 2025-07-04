@@ -4,7 +4,7 @@ import React from 'react'
 const DownloadResume = () => {
 
     const downloadResume = () => {
-        const pdfUrl = "/assets/resume/sajed-resume.pdf";
+        const pdfUrl = "/assets/resume/sajed-fullstack-resume.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = "Shaikh Sajed Resume.pdf";
