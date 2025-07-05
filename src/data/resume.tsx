@@ -162,8 +162,8 @@ export const DATA = {
     {
       title: "Connector",
       desc: [
-        "Real-time medical chat platform for user interactions.",
-        "Powered by Socket.IO for instant bi-directional messaging.",
+        "A highly reliable chat application.",
+        "Powered by Socket.IO for instant real-time messaging.",
         "Supports bidirection coding platform for quick code sharing and reviewing code blocks.",
         "Built on the MERN stack with dynamic updates and user-friendly interface."
       ],
