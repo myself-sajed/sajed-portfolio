@@ -34,11 +34,11 @@ export default function Portfolio() {
                             />
                             <BlurFadeText
                                 delay={BLUR_FADE_DELAY}
-                                className="font-bold text-gray-800/50 tracking-tighter text-xl md:text-3xl xl:text-4xl/none"
+                                className="font-bold text-gray-800/50 dark:text-gray-400 tracking-tighter text-xl md:text-3xl xl:text-4xl/none"
                                 yOffset={8}
                                 text={"A Fullstack Web Developer"}
                             />
-                            <BlurFade className="flex items-center text-gray-800/90 gap-2 w-full flex-wrap sm:gap-5 text-xs py-0.5 rounded" delay={BLUR_FADE_DELAY}>
+                            <BlurFade className="flex items-center text-gray-800/60 dark:text-gray-400 gap-2 w-full flex-wrap sm:gap-5 text-xs py-0.5 rounded" delay={BLUR_FADE_DELAY}>
                                 <DownloadResume />
                             </BlurFade>
                         </div>
