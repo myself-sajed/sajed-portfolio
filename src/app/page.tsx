@@ -18,7 +18,7 @@ export default function Page() {
         setShowLoading(false);
         setShowPortfolio(true);
         sessionStorage.setItem("hasSeenLoading", "true");
-      }, 5000); // total duration of animations
+      }, 5500); // total duration of animations
 
       return () => clearTimeout(timeout);
     } else {
