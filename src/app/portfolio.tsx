@@ -18,32 +18,30 @@ export default function Portfolio() {
         <main className="flex flex-col min-h-[100dvh] space-y-10 ">
             <section id="hero">
                 <div className="mx-auto w-full max-w-2xl space-y-8">
-                    <div className="gap-2 flex justify-between">
-                        <div className="flex-col flex flex-1 space-y-1.5">
-                            <BlurFadeText
-                                delay={BLUR_FADE_DELAY}
-                                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                                yOffset={8}
-                                text={`Hi, I'm ${DATA.name}`}
-                            />
-                            <BlurFade
-                                className="max-w-[600px] text-sm"
-                                delay={BLUR_FADE_DELAY}
-                            >
-                                <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                                    I have a <b>3+ years of</b> experience as a <b>Full Stack Web Developer</b>, passionate about building scalable and impactful web solutions, dedicated to bringing ideas to life on the web.
-                                </p>
-                            </BlurFade>
-                            <BlurFade className="flex items-center gap-2 w-full flex-wrap sm:gap-3 justify-between text-xs bg-muted py-0.5 px-2 rounded" delay={BLUR_FADE_DELAY}>
-                                <DownloadResume />
-                            </BlurFade>
-                        </div>
-                        <BlurFade delay={BLUR_FADE_DELAY}>
+                    <div className="gap-10 flex justify-between items-center">
+                        <BlurFade delay={BLUR_FADE_DELAY} className="sm:block hidden">
                             <Avatar className="size-28 border-4 border-[#9a6e6d]">
-                                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                                <AvatarImage className="object-cover object-bottom" alt={DATA.name} src={DATA.avatarUrl} />
                                 <AvatarFallback>{DATA.initials}</AvatarFallback>
                             </Avatar>
                         </BlurFade>
+                        <div className="flex-col flex flex-1 sm:space-y-1">
+                            <BlurFadeText
+                                delay={BLUR_FADE_DELAY}
+                                className="font-bold tracking-tighter text-3xl md:text-5xl xl:text-6xl/none"
+                                yOffset={8}
+                                text={`Hi, I'm ${DATA.name}`}
+                            />
+                            <BlurFadeText
+                                delay={BLUR_FADE_DELAY}
+                                className="font-bold text-gray-800/50 tracking-tighter text-xl md:text-3xl xl:text-4xl/none"
+                                yOffset={8}
+                                text={"A Fullstack Web Developer"}
+                            />
+                            <BlurFade className="flex items-center text-gray-800/90 gap-2 w-full flex-wrap sm:gap-5 text-xs py-0.5 rounded" delay={BLUR_FADE_DELAY}>
+                                <DownloadResume />
+                            </BlurFade>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -53,7 +51,7 @@ export default function Portfolio() {
                 </BlurFade>
                 <BlurFade delay={BLUR_FADE_DELAY * 4}>
                     <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                        A results-driven <b>Full Stack Web Developer</b> with <b>3+ years</b> deep expertise in building scalable, performant, and secure web applications using the <b>MERN stack</b>. Experienced in designing microservices architectures, optimizing backend systems, and crafting intuitive user interfaces that prioritize usability and impact. Skilled in bridging frontend and backend seamlessly, delivering robust APIs, and integrating modern DevOps workflows to ensure reliability and efficiency across deployments. Passionate about transforming complex business needs into elegant, user-centric digital solutions that scale effortlessly.
+                        Results-oriented <b>Fullstack Developer</b> with <b>3+ years</b> of experience building real-world, scalable web platforms from the ground up using <b>ReactJS, NodeJS, Express & MongoDB</b>. Specialized in microservices, real-time event systems, and AI-powered workflows. Skilled at designing high-performance backends, crafting dynamic frontends, and solving practical problems with clean, maintainable code. Focused on speed, scalability, and delivering solutions that create measurable business impact.
                     </p>
                 </BlurFade>
             </section>

@@ -110,9 +110,10 @@ export const DATA = {
       start: "June 2024",
       end: "Present",
       description: [
-        "Led end-to-end development of 4 major platforms created from the ground-up with strong frontend and backend ownership.",
-        "Improved scalability, UX, and delivery speed by designing reusable components, RBAC systems, and high-performance UIs.",
-        "Reduced manual effort by ~60%, achieved >90% UAT success, and laid groundwork for AI integration using LLMs and Inngest."
+        "Led development of 4 complex platforms using the MERN stack, delivering scalable APIs & high-end designs.",
+        "Implemented microservice architecture using NodeJS & Postgres with Kafka and Redis for async communication and caching, improving system responsiveness by 60%.",
+        "Built modular UI kits with React, Tailwind, and ShadCN, accelerating frontend delivery by 40% across teams.",
+        "Integrated AI workflows using Inngest and Pinecone to automate key business logic and deliver real-time recommendations with zero downtime."
       ],
     },
     {
@@ -124,9 +125,10 @@ export const DATA = {
       start: "May 2022",
       end: "May 2024",
       description: [
-        "Built a full-scale University Information Management System from scratch, covering students, staff, and faculty operations.",
-        "Developed 10+ critical reporting modules (e.g., CAS, PBAS, NIRF) with dashboards and auto-generated reports for departments and schools.",
-        "Reduced manual paperwork by 50% through digitization and an intuitive onboarding guide for all users (teachers, admin, staff)."
+        "Developed and maintained 30+ internal web modules using ReactJS, NodeJS and MongoDB that digitized core academic and admin workflows across departments reducing repetitive manual work.",
+        "Engineered reporting automation for 11 academic workflows including CAS, PBAS & AQAR, reducing manual documentation by 90%.",
+        "Engineered backend systems for dynamic PDF using Puppeteer and Excel generation from academic data, saving 100+ hours per quarter.",
+        "Standardized internal dashboards and approval flows, improving cross-department communication and decision tracking by 50%."
       ]
     },
   ],
@@ -138,8 +140,8 @@ export const DATA = {
       title: "Find My Doctor",
       desc: [
         "AI-powered medical triage platform built using NLP.",
-        "Analyzes symptoms from natural language queries.",
-        "Recommends suitable doctors based on urgency, specialization, and context relevance."
+        "Built an AI triage system that matches user symptoms to relevant doctors and probable conditions using AI agents, severity scoring, and vector search through Pinecone.",
+        "Orchestrated Gemini-based pipelines using Inngest for real-time feedback, embeddings, and vector search."
       ],
       techStack: ["React JS", "Zustand", "Node JS", "MongoDB", "Inngest", "Pinecone", "Tailwind CSS"],
       websiteURL: 'https://find-my-doctor-app.vercel.app/',
@@ -149,10 +151,10 @@ export const DATA = {
     {
       title: "Round Pizza Microservices Architecture",
       desc: [
-        "Microservices system with separate services for Auth, Product, Orders, Category, Socket, and Notifications.",
-        "Uses API Gateway with Redis caching and dedicated databases (PostgreSQL and MongoDB).",
+        "Engineered a microservices-based pizza ordering application using NodeJS, Postgres & MongoDB, for auth, catalog, order processing, payment, and notification modules.",
+        "Implemented React & Next.js frontend with socket-powered dashboards and role-based routing.",
         "Real-time communication via Socket.IO and notifications through Nodemailer.",
-        "Supports client and admin panels routed through the gateway for clean separation."
+        "Used Kafka for cross-service events and Redis for API response optimization"
       ],
       techStack: ["React JS", "Next JS", "Zustand", "Node JS", "Express JS", "PostgreSQL", "MongoDB", "Redis", "Socket.io", "Kafka", "Tailwind CSS"],
       websiteURL: 'https://app.eraser.io/workspace/bvBOgZYuP9cvNw376AIP?origin=share',
@@ -162,10 +164,9 @@ export const DATA = {
     {
       title: "Connector",
       desc: [
-        "A highly reliable chat application.",
-        "Powered by Socket.IO for instant real-time messaging.",
-        "Supports bidirection coding platform for quick code sharing and reviewing code blocks.",
-        "Built on the MERN stack with dynamic updates and user-friendly interface."
+        "A Chatting and Collaborative Code Sharing Platform",
+        "Designed a collaborative code-sharing and real-time chat platform using MERN stack and Socket.io.",
+        "Integrated syntax highlighting for code blocks and crafted frontend design using ShadCN for better accessibility"
       ],
       techStack: ["Next.js", "Redux", "Tailwind CSS", "Node.js", "MongoDB", "Socket.IO"],
       websiteURL: 'https://connector-sajed.vercel.app/',
