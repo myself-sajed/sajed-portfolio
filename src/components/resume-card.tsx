@@ -47,7 +47,7 @@ export const ResumeCard = ({
     >
       <Card className="flex">
         <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+          <Avatar className="border size-9 sm:size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
               alt={altText}
@@ -89,7 +89,7 @@ export const ResumeCard = ({
             {/* Add bullet points of work done */}
 
           </CardHeader>
-          <div className="-space-y-1.5">
+          <div className="-space-y-1.5 sm:mt-0 sm:-ml-0 -ml-14 mt-5 ">
             {
               description.map((desc, index) => (
                 <Markdown key={index} className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">

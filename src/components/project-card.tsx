@@ -41,7 +41,7 @@ export function ProjectCard({
   return (
     <Card
       className={
-        "flex flex-col overflow-hidden gap-3 border hover:shadow-lg transition-all p-5 duration-300 ease-out h-full"
+        "flex flex-col overflow-hidden gap-3 border hover:shadow-lg transition-all p-2 sm:p-5 duration-300 ease-out h-full"
       }
     >
       <a
