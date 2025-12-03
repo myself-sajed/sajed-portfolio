@@ -107,7 +107,7 @@ export const DATA = {
       location: "Hyderabad, India",
       title: "Fullstack Web Developer",
       logoUrl: "/assets/icons/ideamind.jpg",
-      start: "June 2024",
+      start: "Jan 2023",
       end: "Present",
       description: [
         "Led development of 4 complex platforms using the MERN stack, delivering scalable APIs & high-end designs.",
@@ -115,21 +115,6 @@ export const DATA = {
         "Built modular UI kits with React, Tailwind, and ShadCN, accelerating frontend delivery by 40% across teams.",
         "Integrated AI workflows using Inngest and Pinecone to automate key business logic and deliver real-time recommendations with zero downtime."
       ],
-    },
-    {
-      company: "SRTMUN",
-      badges: [],
-      href: "https://srtmun-uims.org",
-      title: "Fullstack Web Developer",
-      logoUrl: "/assets/icons/srt.png",
-      start: "May 2022",
-      end: "May 2024",
-      description: [
-        "Developed and maintained 30+ internal web modules using ReactJS, NodeJS and MongoDB that digitized core academic and admin workflows across departments reducing repetitive manual work.",
-        "Engineered reporting automation for 11 academic workflows including CAS, PBAS & AQAR, reducing manual documentation by 90%.",
-        "Engineered backend systems for dynamic PDF using Puppeteer and Excel generation from academic data, saving 100+ hours per quarter.",
-        "Standardized internal dashboards and approval flows, improving cross-department communication and decision tracking by 50%."
-      ]
     },
   ],
   education: [
@@ -157,8 +142,8 @@ export const DATA = {
         "Used Kafka for cross-service events and Redis for API response optimization"
       ],
       techStack: ["React JS", "Next JS", "Zustand", "Node JS", "Express JS", "PostgreSQL", "MongoDB", "Redis", "Socket.io", "Kafka", "Tailwind CSS"],
-      websiteURL: 'https://app.eraser.io/workspace/bvBOgZYuP9cvNw376AIP?origin=share',
-      githubURL: 'https://app.eraser.io/workspace/bvBOgZYuP9cvNw376AIP?origin=share',
+      websiteURL: 'https://docs.google.com/document/d/1IFEkcznkeehAOBcjs-OFQUUZ5pR2lAPZhmqEh76AGN4/edit?usp=sharing',
+      githubURL: 'https://docs.google.com/document/d/1IFEkcznkeehAOBcjs-OFQUUZ5pR2lAPZhmqEh76AGN4/edit?usp=sharing',
       imgURL: 'round.png'
     },
     {
