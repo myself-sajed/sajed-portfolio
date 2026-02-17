@@ -5,7 +5,7 @@ export const DATA = {
   name: "Shaikh Sajed",
   initials: "SS",
   url: "https://sajed-dev.vercel.app",
-  description: "Shaikh Sajed | Fullstack Web Developer, who loves Building Scalable Web Applications",
+  description: "Shaikh Sajed | A Software Engineer, who loves Building Scalable Web Applications",
   location: "Hyderabad, India",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   avatarUrl: "/assets/icons/me.jpg",
@@ -101,6 +101,19 @@ export const DATA = {
   },
   work: [
     {
+      company: "Elecbits",
+      href: "#",
+      badges: [],
+      location: "Banglore, India",
+      title: "SDE-II",
+      logoUrl: "/assets/icons/elecbits.jpg",
+      start: "Feb 2026",
+      end: "Present",
+      description: [
+        "Recently joined."
+      ],
+    },
+    {
       company: "Ideamind Technologies Pvt. Ltd.",
       href: "#",
       badges: [],
@@ -108,7 +121,7 @@ export const DATA = {
       title: "Fullstack Web Developer",
       logoUrl: "/assets/icons/ideamind.jpg",
       start: "Jan 2023",
-      end: "Present",
+      end: "Feb 2026",
       description: [
         "Led development of 4 complex platforms using the MERN stack, delivering scalable APIs & high-end designs.",
         "Implemented microservice architecture using NodeJS & Postgres with Kafka and Redis for async communication and caching, improving system responsiveness by 60%.",

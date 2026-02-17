@@ -20,7 +20,7 @@ export default function Portfolio() {
                 <div className="mx-auto w-full max-w-2xl space-y-8">
                     <div className="gap-10 flex justify-between items-center">
                         <BlurFade delay={BLUR_FADE_DELAY} className="sm:block hidden">
-                            <Avatar className="size-28 border-4 border-[#9a6e6d]">
+                            <Avatar className="size-28 border-4 border-[#7a7168]">
                                 <AvatarImage className="object-cover object-bottom" alt={DATA.name} src={DATA.avatarUrl} />
                                 <AvatarFallback>{DATA.initials}</AvatarFallback>
                             </Avatar>
@@ -28,15 +28,15 @@ export default function Portfolio() {
                         <div className="flex-col flex flex-1 sm:space-y-1">
                             <BlurFadeText
                                 delay={BLUR_FADE_DELAY}
-                                className="font-bold tracking-tighter text-3xl md:text-5xl xl:text-6xl/none"
+                                className="font-bold tracking-tighter text-3xl md:text-4xl xl:text-5xl/none"
                                 yOffset={8}
                                 text={`Hi, I'm ${DATA.name}`}
                             />
                             <BlurFadeText
                                 delay={BLUR_FADE_DELAY}
-                                className="font-bold text-gray-800/50 dark:text-gray-400 tracking-tighter text-xl md:text-3xl xl:text-4xl/none"
+                                className="font-bold text-gray-800/50 dark:text-gray-400 tracking-tighter text-xl md:text-2xl xl:text-3xl"
                                 yOffset={8}
-                                text={"A Fullstack Web Developer"}
+                                text={"Software Development Engineer-II"}
                             />
                             <BlurFade className="flex items-center text-gray-800/60 dark:text-gray-400 gap-2 w-full flex-wrap sm:gap-5 text-xs py-0.5 rounded" delay={BLUR_FADE_DELAY}>
                                 <DownloadResume />
@@ -51,7 +51,7 @@ export default function Portfolio() {
                 </BlurFade>
                 <BlurFade delay={BLUR_FADE_DELAY * 4}>
                     <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                        Results-oriented <b>Fullstack Developer</b> with <b>3+ years</b> of experience building real-world, scalable web platforms from the ground up using <b>ReactJS, NodeJS, Express & MongoDB</b>. Specialized in microservices, real-time event systems, and AI-powered workflows. Skilled at designing high-performance backends, crafting dynamic frontends, and solving practical problems with clean, maintainable code. Focused on speed, scalability, and delivering solutions that create measurable business impact.
+                        Results-oriented <b>Software Engineer</b> with <b>3+ years</b> of experience building real-world, scalable web platforms from the ground up using <b>ReactJS, NodeJS, Express & MongoDB</b>. Specialized in microservices, real-time event systems, and AI-powered workflows. Skilled at designing high-performance backends, crafting dynamic frontends, and solving practical problems with clean, maintainable code. Focused on speed, scalability, and delivering solutions that create measurable business impact.
                     </p>
                 </BlurFade>
             </section>
