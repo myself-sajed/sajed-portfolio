@@ -100,19 +100,19 @@ export const DATA = {
     },
   },
   work: [
-    {
-      company: "Elecbits",
-      href: "#",
-      badges: [],
-      location: "Banglore, India",
-      title: "SDE-II",
-      logoUrl: "/assets/icons/elecbits.jpg",
-      start: "Feb 2026",
-      end: "Present",
-      description: [
-        "Recently joined."
-      ],
-    },
+    // {
+    //   company: "Elecbits",
+    //   href: "#",
+    //   badges: [],
+    //   location: "Banglore, India",
+    //   title: "SDE-II",
+    //   logoUrl: "/assets/icons/elecbits.jpg",
+    //   start: "Feb 2026",
+    //   end: "Present",
+    //   description: [
+    //     "Recently joined."
+    //   ],
+    // },
     {
       company: "Ideamind Technologies Pvt. Ltd.",
       href: "#",
