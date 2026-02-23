@@ -36,7 +36,7 @@ export default function Portfolio() {
                                 delay={BLUR_FADE_DELAY}
                                 className="font-bold text-gray-800/50 dark:text-gray-400 tracking-tighter text-xl md:text-2xl xl:text-3xl"
                                 yOffset={8}
-                                text={"Software Development Engineer-II"}
+                                text={"Software Engineer"}
                             />
                             <BlurFade className="flex items-center text-gray-800/60 dark:text-gray-400 gap-2 w-full flex-wrap sm:gap-5 text-xs py-0.5 rounded" delay={BLUR_FADE_DELAY}>
                                 <DownloadResume />
